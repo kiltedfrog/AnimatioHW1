@@ -1,0 +1,55 @@
+//Pull new Repository from git onto local machine
+git clone URL
+
+//get local up to date with git
+  //be on the right branch
+git checkout <desired branch>
+
+//pull the up to date state of the online repository
+git pull
+
+git commit -m "Message"
+
+//will update current branch forward to branchname state.
+  //can only be a fastforward merge x     
+git merge branchname
+
+//send code from local to online repo
+git push
+
+//stage file for push to online repo
+git add <filename>
+
+//tells you where you are and what the differences are
+git status
+
+From in terminal texteditor (vim)
+from initial state
+  press "i"
+    this take you to the insert state
+   
+   type message
+   
+   when done hit "esc"
+   then ":wq" to save and exit
+
+
+
+
+//To push code to master
+ // modify personal local branch
+    //leave these changes here
+    
+   git checkout master
+   
+   //bring your local master up to date with online repo
+   git pull
+  
+    //when master is up to date 
+    git merge branchname
+      //this will bring your local master up to date with your local personal branch
+      
+    when this is done
+    git push
+      //will publish code to online repo
+  
